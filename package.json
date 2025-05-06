@@ -1,0 +1,24 @@
+{
+  "name": "ecorec-frontend",
+  "version": "1.0.0",
+  "description": "Frontend para Ecorec - Soluciones Ecológicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/styles/main.scss:dist/css/main.css --watch",
+    "build": "sass src/styles/main.scss:dist/css/main.css --style compressed",
+    "start": "live-server"
+  },
+  "keywords": [
+    "ecorec",
+    "ecología",
+    "reciclaje",
+    "medioambiente"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.60.0"
+  }
+} 
