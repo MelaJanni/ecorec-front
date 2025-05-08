@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Producto - Ecorec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg row justify-content-center align-items-center py-0">
+            <div class="navbar-top col-12 d-flex justify-content-center align-items-center">
+                <div class="navbar-container row__width">
+                    <div class="row row__width justify-content-between align-items-center">
+                        <div class=" col-6 col-lg-3  d-flex align-items-center">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <!-- Logo opcional -->
+                                <img src="src/images/logo/logo.svg" alt="Productos EcoRec" height="40" class="me-2">
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-8  d-flex justify-content-end ">
+                            <button class="btn-none d-lg-none me-3">
+                                <img src="src/images/nav-icons/search.svg" alt="Buscar" class="search-mobile" >
+                            </button>
+                            <button class="btn-none d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <img src="src/images/nav-icons/menu.svg" alt="Menu">
+                            </button>
+                            
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body d-flex justify-content-between align-items-center">
+                                  <div class="">
+                                   <div class="input-search">
+                                    <button type="button" class="btn-none">
+                                        <img src="src/images/nav-icons/search.svg" alt="Buscar">
+                                    </button>
+                                    <input type="text" placeholder="Buscar">
+                                   </div>
+                                  </div>
+                                  <div class="d-flex justify-content-center align-items-center">
+                                    <ul class="d-flex justify-content-center align-items-center">
+                                        <li class="me-4">
+                                            <a href="" class="link-v2"> Nosotros</a>
+                                        </li>
+                                        <li class="me-4">
+                                            <a href="" class="link-v2"> Contacto</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown ">
+                                        <button class="btn-none dropdown-toggle link-v2" type="button" data-bs-toggle="dropdown">
+                                            <img src="src/images/nav-icons/language.svg" alt="Usuario"> ES
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Español</a></li>
+                                            <li><a class="dropdown-item" href="#">English</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-bottom col-12 d-flex justify-content-center align-items-center">
+                <div class=" navbar-container d-flex justify-content-center align-items-center">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn-none dropdown-toggle link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Industria Farma
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Farmacéutica</a></li>
+                                    <li><a class="dropdown-item" href="#">Veterinaria</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn-none dropdown-toggle link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Industria Automotriz
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Repuestos</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn-none dropdown-toggle link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Industria Electrónica
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Componentes</a></li>
+                                    <li><a class="dropdown-item" href="#">Consumibles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn-none dropdown-toggle link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Industria Salud
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Equipos Médicos</a></li>
+                                    <li><a class="dropdown-item" href="#">Insumos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="dropdown">
+                                <button class="btn-none dropdown-toggle link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Seguridad
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Cámaras</a></li>
+                                    <li><a class="dropdown-item" href="#">Alarmas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Contenido principal -->
+        <div class="row product-consultation-section justify-content-center align-items-center py-5">
+            <div class="col-12">
+                <div class="row section-container-v2 justify-content-center mx-3 mx-md-auto">
+                    <div class="col-12 d-flex justify-content-center align-items-center px-0">
+                        <div class="row row__width justify-content-between  align-items-start">
+                            <div class="col-12 col-md d-flex justify-content-center align-items-center product-image-container">
+                                <div class=" position-relative">
+                                    <img src="src/images/home-icons/product-1.svg" alt="Cubrebocas Carbon 50" class="img">
+                                    <button class="btn-none zoom-button d-none d-lg-block" aria-label="Zoom imagen">
+                                        <img src="src/images/product-icons/zoom.svg" alt="Zoom">
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-md section-grey consultation-container">
+                                <div class="contact-section">
+                                    <h1 class="consultation-title">Estás consultando por el cubrebocas Carbon 50</h1>
+                                    
+                                    <div class="product-details d-flex justify-content-start align-items-center">
+                                        <div class="d-flex align-items-center me-2">
+                                            <span class="detail-label">ID:</span>
+                                            <span class="detail-value">251,594</span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="detail-label">Categoría:</span>
+                                            <span class="detail-value">Industria Farma</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="divider"></div>
+                                    
+                                    <form class="consultation-form">
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-md-6">
+                                                <input type="text" placeholder="Nombre" required>
+                                            </div>
+                                            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                                <input type="email" placeholder="email" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group mb-3">
+                                            <input type="text" placeholder="Empresa">
+                                        </div>
+                                        
+                                        <div class="form-group mb-3">
+                                            <textarea rows="4" placeholder="Mensaje"></textarea>
+                                        </div>
+                                        
+                                        <button type="submit" class="button-primary consultation-submit">Enviar mensaje</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shipping -->
+        <div class="col-12 d-flex justify-content-center align-items-center home">
+            <div class="row row__width justify-content-center benefits-container section-grey-v2">
+                <!-- Envíos -->
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-container mb-3">
+                            <img src="src/images/home-icons/truck.svg" alt="Envíos" width="32" height="32">
+                        </div>
+                        <h3 class="item-title mb-1">Envíos</h3>
+                        <p class="item-description">Envíos internacionales</p>
+                    </div>
+                </div>
+                
+                <!-- Pagos -->
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-container mb-3">
+                            <img src="src/images/home-icons/credit-card.svg" alt="Pagos" width="32" height="32">
+                        </div>
+                        <h3 class="item-title mb-1">Pagos</h3>
+                        <p class="item-description">Múltiples medios de pagos</p>
+                    </div>
+                </div>
+                
+                <!-- Atención 24/7 -->
+                <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="icon-container mb-3">
+                            <img src="src/images/home-icons/users.svg" alt="Atención 24/7" width="32" height="32">
+                        </div>
+                        <h3 class="item-title mb-1">Atención 24/7</h3>
+                        <p class="item-description">Atención personalizada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-section row">
+            <div class="col-12">
+                <div class="row row__width footer-container justify-content-center align-items-center">
+                    <div class="col-12 py-4">
+                        <img src="src/images/logo/logo-white.png" alt="Servicios EcoRec" class="footer-logo">
+                    </div>
+                    <div class="col-12 divider"></div>
+                    <div class="col-12">
+                        <div class="row py-5">
+                            <div class="col-6 col-md-3">
+                                <h3 class="title">Links</h3>
+                                <ul class="links-list">
+                                    <li><a href="#" class="link">Productos</a></li>
+                                    <li><a href="#" class="link">Servicios</a></li>
+                                    <li><a href="#about" class="link">Nosotros</a></li>
+                                    <li><a href="#contact" class="link">Contacto</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <h3 class="title">Links</h3>
+                                <ul class="links-list">
+                                    <li><a href="tel:+541146524230" class="link">Tel: +54 1146524230</a></li>
+                                    <li><a href="mailto:info@serviciosecorec.com.ar" class="link">Email: info@serviciosecorec.com.ar</a></li>
+                                    <li><a href="https://maps.google.com/?q=Roque+Sáenz+peña+4027+Argentina" target="_blank" class="link">Ubicación: Roque Saenz Peña 4027</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-end certificates">
+                                <img src="src/images/footer-icons/image-76.svg" alt="certificate 1" class="certificate-img-1">
+                                <img src="src/images/footer-icons/image-75.svg" alt="certificate 2" class="certificate-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 divider"></div>
+                    <div class="col-12 padding-copy d-flex justify-content-start align-items-center">
+                        <p class="copy">© 2025 Productos <span class="copy-stong">Ecorec</span> | Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal de Zoom -->
+    <div id="zoomModal" class="zoom-modal">
+        <span class="zoom-modal-close">&times;</span>
+        <img class="zoom-modal-content" id="zoomedImage" src="" alt="Imagen Ampliada">
+    </div>
+
+    <script src="src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Lógica para el Zoom de la imagen
+        const zoomModal = document.getElementById('zoomModal');
+        const zoomedImage = document.getElementById('zoomedImage');
+        const zoomButton = document.querySelector('.zoom-button');
+        const closeModalButton = document.querySelector('.zoom-modal-close');
+        const productImage = document.querySelector('.product-image-container img.img');
+
+        function openZoomModal() {
+            zoomedImage.src = productImage.src;
+            zoomModal.style.display = 'flex';
+        }
+
+        function closeZoomModal() {
+            zoomModal.style.display = 'none';
+            zoomedImage.src = '';
+        }
+
+        // Evento para el botón de zoom en desktop
+        if (zoomButton) {
+            zoomButton.addEventListener('click', (event) => {
+                event.stopPropagation();
+                openZoomModal();
+            });
+        }
+
+        // Evento para cerrar la modal
+        if (closeModalButton) {
+            closeModalButton.addEventListener('click', closeZoomModal);
+        }
+
+        // Evento para cerrar la modal al hacer clic fuera de la imagen
+        zoomModal.addEventListener('click', (event) => {
+            if (event.target === zoomModal) {
+                closeZoomModal();
+            }
+        });
+        
+        // Evento para hacer clic en la imagen en mobile y abrir el zoom
+        if (productImage) {
+            productImage.addEventListener('click', (event) => {
+                // Solo activar en pantallas móviles
+                if (window.innerWidth < 992) {
+                    openZoomModal();
+                }
+            });
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,199 @@
+.product-consultation-section .section-grey {
+  border-radius: 16px;
+}
+
+.product-consultation-section .product-image-container {
+  width: 100%;
+  height: 296px;
+  background-color: #EEF1F6;
+  border-radius: 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  max-width: 270px;
+}
+
+.product-consultation-section .product-image-container img.img {
+  width: 270px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 991.98px) {
+  .product-consultation-section .product-image-container img.img {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+}
+
+.product-consultation-section .consultation-container {
+  max-width: 938px;
+  height: auto;
+  padding: 30px 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .product-consultation-section .consultation-container {
+    height: 483px;
+  }
+}
+
+.product-consultation-section .consultation-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #1A1A1A;
+  margin-bottom: 16px;
+}
+
+.product-consultation-section .product-details {
+  margin-bottom: 16px;
+}
+
+.product-consultation-section .product-details .detail-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  margin-right: 5px;
+}
+
+.product-consultation-section .product-details .detail-value {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #808080;
+}
+
+.product-consultation-section .divider {
+  height: 1px;
+  background-color: #E6E6E6;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.product-consultation-section .consultation-form {
+  margin-top: 24px;
+}
+
+.product-consultation-section .consultation-form input, .product-consultation-section .consultation-form textarea {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1A1A1A;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #E6E6E6;
+  width: 100%;
+}
+
+.product-consultation-section .consultation-form input::-webkit-input-placeholder, .product-consultation-section .consultation-form textarea::-webkit-input-placeholder {
+  color: #808080;
+}
+
+.product-consultation-section .consultation-form input:-ms-input-placeholder, .product-consultation-section .consultation-form textarea:-ms-input-placeholder {
+  color: #808080;
+}
+
+.product-consultation-section .consultation-form input::-ms-input-placeholder, .product-consultation-section .consultation-form textarea::-ms-input-placeholder {
+  color: #808080;
+}
+
+.product-consultation-section .consultation-form input::placeholder, .product-consultation-section .consultation-form textarea::placeholder {
+  color: #808080;
+}
+
+.product-consultation-section .consultation-form input:focus, .product-consultation-section .consultation-form textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.product-consultation-section .consultation-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+@media (max-width: 767px) {
+  .product-consultation-section .product-image-container {
+    margin-bottom: 20px;
+  }
+}
+
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zoom-modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+.zoom-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.zoom-modal-close:hover, .zoom-modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=consultation.css.map */

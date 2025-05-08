@@ -32,7 +32,7 @@
 }
 
 .button-primary{
-    width: 214px;
+    width: 100%;
     height: 50px;
     border-radius: 43px;
     background-color: $blue--200;
@@ -54,3 +54,14 @@
     }
 }
 
+.contact-button{
+    max-width: 214px;
+}
+
+.button-consultation{
+    max-width: 404px;
+}
+
+.consultation-submit{
+    max-width: 274px;
+}
