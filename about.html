@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Producto - Ecorec</title>
+    <title>Quiénes Somos - Ecorec</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="src/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid">
@@ -130,61 +131,86 @@
                 </div>
             </div>
         </nav>
-        
+        <div class="row  justify-content-center align-items-center">
+            <div class="col-12 d-flex justify-content-start align-items-center breadcrumb-section-about">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Sobre Nosotros</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
         <!-- Contenido principal -->
         <div class="row home justify-content-center align-items-center">
-            <!-- Consulta de Producto -->
+            <!-- Sección Quiénes Somos -->
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <section class="product-consultation-section py-5 d-flex justify-content-center row__width">
+                <section class="about-page-section py-5 d-flex justify-content-center row__width">
                     <div class="row section-container-v2 justify-content-center row__width">
-                        <div class="col-12 d-flex justify-content-center align-items-center px-0">
-                            <div class="row row__width justify-content-between align-items-start">
-                                <div class="col-12 col-md d-flex justify-content-center align-items-center product-image-container">
-                                    <div class="position-relative">
-                                        <img src="src/images/home-icons/product-1.svg" alt="Cubrebocas Carbon 50" class="img">
-                                        <button class="btn-none zoom-button d-none d-lg-block" aria-label="Zoom imagen">
-                                            <img src="src/images/product-icons/zoom.svg" alt="Zoom">
-                                        </button>
-                                    </div>
+                        <div class="col-12">
+                            <div class="about-chip-container mb-3">
+                                <span class="about-chip">Sobre nosotros</span>
+                            </div>
+                            <div class="divider w-100"></div>
+                            <h1 class="about-title mb-4">Quiénes Somos</h1>
+                            <p class="about-intro-description mb-5">
+                                Somos un lavadero industrial con más de 40 años de experiencia. Nos especializamos en el lavado de uniformes y ropa en general de diferentes industrias y en el reciclado de guantes industriales. <br> <br>
+
+                                A su vez contamos en nuestras instalaciones con la zona de lavado de tecnología más avanzada de la Argentina para el lavado de prendas de la industria farmacéutica y sus prendas de área limpia. Contamos con un sistema de trazabilidad de código de barras de última tecnología para el seguimiento de sus prendas. <br><br>
+
+                                Somos una empresa cuya misión es ofrecerle a usted y a su empresa el mejor servicio de lavandería industrial posible, cumpliendo toda la normativa vigente.
+                            </p>
+
+                            <div class="row mb-4 justify-content-between align-items-center">
+                                <div class="col-12 d-flex flex-column justify-content-start">
+                                    <h2 class="pillars-title">Nuestros pilares para alcanzar esto son:</h2>
+                                    <ul class="pillars-list d-flex justify-content-start align-items-center">
+                                        <li>Reserva de gestión y calidad</li>
+                                        <li>Sistema de gestión y calidad</li>
+                                        <li>Experiencia y profesionalismo</li>
+                                    </ul>
                                 </div>
-                                
-                                <div class="col-12 col-md section-grey consultation-container">
-                                    <div class="contact-section">
-                                        <h1 class="consultation-title">Estás consultando por el cubrebocas Carbon 50</h1>
-                                        
-                                        <div class="product-details d-flex justify-content-start align-items-center">
-                                            <div class="d-flex align-items-center me-2">
-                                                <span class="detail-label">ID:</span>
-                                                <span class="detail-value">251,594</span>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <span class="detail-label">Categoría:</span>
-                                                <span class="detail-value">Industria Farma</span>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="divider"></div>
-                                        
-                                        <form class="consultation-form">
-                                            <div class="row mb-3">
-                                                <div class="col-12 col-md-6">
-                                                    <input type="text" placeholder="Nombre" required>
-                                                </div>
-                                                <div class="col-12 col-md-6 mt-3 mt-md-0">
-                                                    <input type="email" placeholder="email" required>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="form-group mb-3">
-                                                <input type="text" placeholder="Empresa">
-                                            </div>
-                                            
-                                            <div class="form-group mb-3">
-                                                <textarea rows="4" placeholder="Mensaje"></textarea>
-                                            </div>
-                                            
-                                            <button type="submit" class="button-primary consultation-submit">Enviar mensaje</button>
-                                        </form>
+                               
+                            </div>
+
+                            <div class="advantages-section mb-5 row row__width justify-content-center align-items-center">
+                                <div class="col-12 col-md-6 d-flex flex-column justify-content-start">
+                                    <h2 class="advantages-title">Ventajas que obtendrá al trabajar con nosotros</h2>
+                                    <ul class="advantages-list">
+                                        <li>Mejorar la imagen de su empresa y beneficiar a su empleado</li>
+                                    <li>Reducir costo de guardar la ropa de sus prendas o tercerizando sus lavaderos de trabajo.</li>
+                                    <li>Evitar la contaminación cruzada de nuestras gamuzas por usted en sus prendas.</li>
+                                    <li>Cumplir con todo lo que piden vigente.</li>
+                                        <li>Proteger la media universal y de su trabajador.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
+                                    <img src="src/images/about-icons/logo-cropped.svg" alt="Pilares Ecorec" class="pillars-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tarjeta Protección y medio ambiente -->
+            <div class="col-12 d-flex justify-content-center align-items-center mb-5 pb-5">
+                <section class="protection-card-section py-5 d-flex justify-content-center row__width">
+                    <div class="row section-container-v2 justify-content-center row__width">
+                        <div class="col-12">
+                            <div class="protection-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-5 text-center text-md-start mb-4 mb-md-0">
+                                        <img src="src/images/about-icons/world.svg" alt="Protección y Medio Ambiente" class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-md-7">
+                                        <h2 class="protection-card-title">
+                                            <span class="fw-normal">Protección y</span> <span class="fw-bold">medio ambiente</span>
+                                        </h2>
+                                        <p class="protection-card-description">
+                                            Cumplimiento de regulaciones vigentes, lavadero habilitado por OPDS / ADA, todos los líquidos son tratados sin dañar los campos terrestres.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -192,43 +218,59 @@
                     </div>
                 </section>
             </div>
-            
-            <!-- Shipping -->
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <div class="row row__width justify-content-center benefits-container section-grey-v2">
-                    <!-- Envíos -->
-                    <div class="col-12 col-md-4 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-container mb-3">
-                                <img src="src/images/home-icons/truck.svg" alt="Envíos" width="32" height="32">
+
+            <!-- Sección de Contacto -->
+            <div class="col-12 d-flex justify-content-center align-items-center section-grey">
+                <section id="contact" class="contact-section py-5 d-flex justify-content-center row__width">
+                    <div class="row row__width justify-content-between align-items-center section-container">
+                        <div class="col-12 col-lg-7 mb-4 mb-lg-0">
+                            <div class="row d-flex flex-column justify-content-center align-items-start">
+                                <h2 class="title-section-v3">Comunicate <span class="title-section-v2">con nosotros</span></h2>
+                                <p class="description-section my-3">Do you fancy saying hi to me or you want to get started with your project and you need my <br> help? Feel free to contact me.</p>
                             </div>
-                            <h3 class="item-title mb-1">Envíos</h3>
-                            <p class="item-description">Envíos internacionales</p>
+                            <div class="row d-flex flex-column justify-content-center align-items-start">
+                                <div class="col-12 d-flex justify-content-center align-items-center px-0">
+                                    <form action="" class="contact-form row row__width  d-flex justify-content-center align-items-center">
+                                        <div class="col-12 col-lg-6 form-group mb-3 pe-lg-1">
+                                            <input type="text" class="" placeholder="Nombre completo">
+                                        </div>
+                                        <div class="col-12 col-lg-6 form-group mb-3 ps-lg-1">
+                                            <input type="email" class="" placeholder="Email">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="" placeholder="Asunto">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <textarea class="" rows="4" placeholder="Mensaje"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-12 d-flex justify-content-start align-items-center">
+                                    <button type="submit" class="button-primary">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-start">
+                            <div class="d-flex flex-column justify-content-center align-items-center row__width">
+                                <img src="src/images/contact-icons/location.svg" alt="Ubicación">
+                                <a href="https://maps.google.com/?q=Roque+Sáenz+peña+4027+Argentina" target="_blank" class="contact-description">Roque Sáenz peña 4027 <br> Argentina</a>
+                            </div>
+
+                            <div class="d-flex flex-column justify-content-center align-items-center margin row__width">
+                                <img src="src/images/contact-icons/mail.svg" alt="Email">
+                                <a href="mailto:info@ecorec.com.ar" class="contact-description">info@serviciosecorec.com.ar</a>
+                            </div>
+                            
+                            <div class="d-flex flex-column justify-content-center align-items-center row__width">
+                                <img src="src/images/contact-icons/phone.svg" alt="Teléfono">
+                                <div class="contact-description">
+                                    <a href="tel:+541146524230" class="contact-link">+5411 4652 4230</a> <br> 
+                                    <a href="tel:+541144545877" class="contact-link">4454 5877</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- Pagos -->
-                    <div class="col-12 col-md-4 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-container mb-3">
-                                <img src="src/images/home-icons/credit-card.svg" alt="Pagos" width="32" height="32">
-                            </div>
-                            <h3 class="item-title mb-1">Pagos</h3>
-                            <p class="item-description">Múltiples medios de pagos</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Atención 24/7 -->
-                    <div class="col-12 col-md-4 text-center d-flex justify-content-center align-items-center">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-container mb-3">
-                                <img src="src/images/home-icons/users.svg" alt="Atención 24/7" width="32" height="32">
-                            </div>
-                            <h3 class="item-title mb-1">Atención 24/7</h3>
-                            <p class="item-description">Atención personalizada</p>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
         
@@ -246,7 +288,7 @@
                                 <ul class="links-list">
                                     <li><a href="#" class="link">Productos</a></li>
                                     <li><a href="#" class="link">Servicios</a></li>
-                                    <li><a href="#about" class="link">Nosotros</a></li>
+                                    <li><a href="about.html" class="link">Nosotros</a></li>
                                     <li><a href="#contact" class="link">Contacto</a></li>
                                 </ul>
                             </div>
@@ -273,62 +315,7 @@
         </footer>
     </div>
 
-    <!-- Modal de Zoom -->
-    <div id="zoomModal" class="zoom-modal">
-        <span class="zoom-modal-close">&times;</span>
-        <img class="zoom-modal-content" id="zoomedImage" src="" alt="Imagen Ampliada">
-    </div>
-
     <script src="src/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        // Lógica para el Zoom de la imagen
-        const zoomModal = document.getElementById('zoomModal');
-        const zoomedImage = document.getElementById('zoomedImage');
-        const zoomButton = document.querySelector('.zoom-button');
-        const closeModalButton = document.querySelector('.zoom-modal-close');
-        const productImage = document.querySelector('.product-image-container img.img');
-
-        function openZoomModal() {
-            zoomedImage.src = productImage.src;
-            zoomModal.style.display = 'flex';
-        }
-
-        function closeZoomModal() {
-            zoomModal.style.display = 'none';
-            zoomedImage.src = '';
-        }
-
-        // Evento para el botón de zoom en desktop
-        if (zoomButton) {
-            zoomButton.addEventListener('click', (event) => {
-                event.stopPropagation();
-                openZoomModal();
-            });
-        }
-
-        // Evento para cerrar la modal
-        if (closeModalButton) {
-            closeModalButton.addEventListener('click', closeZoomModal);
-        }
-
-        // Evento para cerrar la modal al hacer clic fuera de la imagen
-        zoomModal.addEventListener('click', (event) => {
-            if (event.target === zoomModal) {
-                closeZoomModal();
-            }
-        });
-        
-        // Evento para hacer clic en la imagen en mobile y abrir el zoom
-        if (productImage) {
-            productImage.addEventListener('click', (event) => {
-                // Solo activar en pantallas móviles
-                if (window.innerWidth < 992) {
-                    openZoomModal();
-                }
-            });
-        }
-    </script>
 </body>
 </html> 
