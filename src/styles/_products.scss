@@ -1,0 +1,139 @@
+.products-section {
+  margin: 40px 0;
+  
+  h2 {
+    text-align: left;
+  }
+  
+  .nav-tabs {
+    border-bottom: none;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    .nav-item {
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .nav-link {
+      border: none;
+      background-color: transparent;
+      font-weight: 500;
+      font-size: 14px;
+      color: $gray--500;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 28px;
+      transition: all 0.3s ease;
+      text-wrap: nowrap;
+      min-width: min-content;
+      
+      &.active {
+        height: 41px;
+        font-weight: 500;
+        font-size: 14px;
+        color: $blue--200;
+        border-radius: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $blue-shadow--100;
+        padding: 8px 16px;
+      }
+    }
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .products {
+    background-color: $white--100;
+    border-radius: 8px;
+    height: 318px;
+    max-width: 298px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    background-color: $gray--1100;
+    border: 2px solid $gray--200;
+   
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    
+    .product-overlay { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $black-shadow--100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      padding: 20px;
+      opacity: 0;
+      
+      .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $white--100;
+      }
+      
+      .description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: $gray--300;
+      }    
+      
+      a {
+        margin-top: 15px;
+      }
+    }
+    
+    &:hover, &:focus, .active {
+      .product-overlay {
+        opacity: 1;
+        border: 2px solid $blue--200;
+      }
+    }
+  }
+} 
