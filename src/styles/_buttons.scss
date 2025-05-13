@@ -63,5 +63,7 @@
 }
 
 .consultation-submit{
-    max-width: 274px;
+    @media screen and (min-width: 992px) {
+        max-width: 274px;
+    }
 }
